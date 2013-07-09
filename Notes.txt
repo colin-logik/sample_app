@@ -1,0 +1,17 @@
+Are we creating classes for our database objects and assigning them attributes?  What superclass would they inherit from?
+
+example:
+
+Class Project
+	attr_accessor :number, :account, :name, :contact, :matter, :case, relativity_db
+
+	def initialize(attributes = {})
+    		@number  = attributes[:number]
+    		@account = attributes[:account]
+		@name = attributes[:name]
+		@contact = attributes[:contact]
+		@matter = attributes[:matter]
+		@case = attributes[:case]
+		@relativity_db = attributes[:relativity_db]
+  	end
+end
